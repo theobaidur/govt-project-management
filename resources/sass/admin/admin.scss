@@ -1,0 +1,50 @@
+// Variables
+@import "variables";
+
+// Vendor
+@import "vendor/index";
+
+// Your own, project specific styles
+@import "styles/index";
+
+@media print{
+    .bulk-checkbox{
+        visibility: hidden !important;
+    }
+
+    th, td{
+        .btn, button{
+            display: none !important;
+        }
+    }
+}
+
+.app-footer{
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    .table-listing th,
+    .table-listing td {
+      display: table-cell !important;
+    }
+  
+    .table-listing tr:not([style]) {
+        display: table-row !important;
+    }
+  
+    .table-listing th:last-of-type,
+    .table-listing td:last-of-type,
+    .table-listing th:nth-of-type(2),
+    .table-listing td:nth-of-type(2) {
+        display: table-cell !important;
+    }
+  
+    .table-listing td:last-of-type {
+      padding-right: 0;
+    }
+  
+    td:nth-of-type(2) {
+      overflow: hidden;
+    }
+  }
